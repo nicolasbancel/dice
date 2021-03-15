@@ -1,0 +1,13 @@
+# .travis.yml
+
+# Fichier de configuration
+# On code en Python
+
+language: python
+python: 3.7
+dist: xenial
+install:
+  - pip install pipenv
+  - pipenv install --dev
+script:
+  - pipenv run nosetests
