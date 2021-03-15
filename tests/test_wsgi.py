@@ -11,6 +11,7 @@ class TestViews(TestCase):
 
     def test_one_roll(self):
         roll = self.client.get('/').json['roll']
-        self.assertIsInstance(roll, int)
-        self.assertGreater(roll,0)
-        self.assertLess(roll,7)
+        ## get : fait la requête HTTP. Puis valeur de la clé roll.
+        self.assertIsInstance(roll, int) # c'est un entier
+        self.assertGreater(roll,0) # Plus grand que 0
+        self.assertLess(roll,7) # Moins grand que 7
