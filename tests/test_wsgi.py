@@ -14,4 +14,4 @@ class TestViews(TestCase):
         ## get : fait la requête HTTP. Puis valeur de la clé roll.
         self.assertIsInstance(roll, int) # c'est un entier
         self.assertGreater(roll,0) # Plus grand que 0
-        self.assertLess(roll,7) # Moins grand que 7
+        self.assertLess(roll,13) # Moins grand que 7
