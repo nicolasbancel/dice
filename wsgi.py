@@ -34,4 +34,6 @@ print(app)
 @app.route('/error')
 def error():
     # 1/0 should not work
-    return jsonify({'roll':1 / 0})
+    #return jsonify({'roll':1 / 0})
+    # en fait, plus une erreur
+    return jsonify({'roll':1})
