@@ -8,9 +8,9 @@ sentry_dsn = os.getenv('SENTRY_DSN',None)
 if sentry_dsn:
     import sentry_sdk
     from sentry_sdk.integrations.flask import FlaskIntegration
-        sentry_sdk.init(
-            sentry_dsn,
-            integrations=[FlaskIntegration()]
+    sentry_sdk.init(
+        sentry_dsn,
+        integrations=[FlaskIntegration()]
         )
 
 
